@@ -11,6 +11,7 @@ read -p "Enter Second value: " input2
 read -p "Enter Third value: " input3
 
 operation1=$(( input1 + input2 * input3 ))
+operation2=$(( input1 * input2 + input3 ))
 
 sleep 1
 
