@@ -22,8 +22,16 @@ results[result1]=$operation1
 results[result2]=$operation2
 results[result3]=$operation3
 results[result4]=$operation4
-
 echo ${results[@]}
+
+#Reading the values from Dictionary and storing into the Array
+declare -a resultsArray
+
+for result in ${results[@]}
+do
+	resultsArray[index++]=$result
+done
+echo ${resultsArray[@]}
 
 sleep 1
 
