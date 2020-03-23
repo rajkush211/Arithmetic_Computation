@@ -54,15 +54,15 @@ echo "Results in Descending order ${resultsArray[@]}"
 
 for index in ${!resultsArray[@]}
 do
-   for count in ${!resultsArray[@]}
-   do
-      if [[ ${resultsArray[index]} -lt ${resultsArray[count]} ]]
-      then
-         temp=${resultsArray[index]}
-         resultsArray[index]=${resultsArray[count]}
-         resultsArray[count]=$temp
-      fi
-   done
+	for count in ${!resultsArray[@]}
+	do
+		if [[ ${resultsArray[index]} -lt ${resultsArray[count]} ]]
+		then
+			temp=${resultsArray[index]}
+			resultsArray[index]=${resultsArray[count]}
+			resultsArray[count]=$temp
+		fi
+	done
 done
 echo "Results in Ascending order ${resultsArray[@]}"
 
